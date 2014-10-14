@@ -1,4 +1,4 @@
-#Pokemon Dicelocke Dice Roller alpha 0.11 by Jmsnipes100(Jacob M. Snipes)
+#Pokemon Dicelocke Dice Roller alpha 0.95 by Jmsnipes100(Jacob M. Snipes)
 print("Welcome to the Pokemon Dicelocke Dice Roller!")
 import random
 print(" ")
@@ -52,13 +52,13 @@ while 1==1:
         print(" ")
         print("Starter: Choses your starter.")
         print(" ")
-        print("Capture: Determines if you can capture the pokemon you encountered.(You have 3 chances, the Dice Roller does not keep track of them)")
+        print("Capture: Determines if you can capture the pokemon you encountered.\n(You have 3 chances, the Dice Roller does not keep track of them)")
         print(" ")
         print("Item: Determines if you can keep the item you found.")
         print(" ")
-        print("New Town: Determines how many items you can buy at the mart.(The Dice Roller does not keep track of the # of items you can buy)")
+        print("New Town: Determines how many items you can buy at the mart.(The Dice Roller \ndoes not keep track of the # of items you can buy)")
         print(" ")
-        print("Revive: Gives you a chance to revive a pokemon in your graveyard after beating a gym.(Revives cannot be saved)")
+        print("Revive: Gives you a chance to revive a pokemon in your graveyard after \nbeating a gym.(Revives cannot be saved)")
         print(" ")
         print("Name: Generates a name for your pokemon.")
         print(" ")
@@ -66,7 +66,9 @@ while 1==1:
         print(" ")
         print("Rules: Lists the basic rules of Dicelocke.")
     elif function=="Rules":
-        print
+        print("1:You must use the 'Starter' function to chose your starter.")
+        print("")
+        print("2:You must use the 'Name' function to name your pokemon.\n(Note there is a slight chance that a name will be profane/insulting\n & you can then change it if you wish by running the 'Name' function again)")
     elif function=="Name":
         length=int(random.randint(1,12))
         N1=random.randint(1,26)
