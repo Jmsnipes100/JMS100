@@ -69,6 +69,10 @@ while 1==1:
         print("1:You must use the 'Starter' function to chose your starter.")
         print("")
         print("2:You must use the 'Name' function to name your pokemon.\n(Note there is a slight chance that a name will be profane/insulting\n & you can then change it if you wish by running the 'Name' function again)")
+        print("")
+        print("3:You must use the 'Capture' function on the first pokemon \nyou encounter in an area except when that pokemon is a duplicate \nor evolution of a pokemon you have. When the Dice Roller says you cannot \ncapture the pokemon you defeat it or exit the battle and try again. \nOn the third time the Dice Roller says you cannot caputre the pokemon \nthen you cannot capture a pokemon in that area. \nIf the Dice Roller says you can capture the pokemon and you fail to capture it \nyou cannot capture a pokemon in that area.")
+        print("")
+        print("4:If you enounter the same pokemon that you have/is an evolution \nof a pokemon you have 3 times in a new area you cannot capture a \npokemon in that area.")
     elif function=="Name":
         length=int(random.randint(1,12))
         N1=random.randint(1,26)
