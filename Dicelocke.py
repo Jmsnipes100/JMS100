@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Pokemon Dicelocke Dice Roller beta 0.05 by Jmsnipes100(Jacob M. Snipes)
+=======
+#Pokemon Dicelocke Dice Roller beta 0.03 by Jmsnipes100(Jacob M. Snipes)
+>>>>>>> c215269766e4cbaa771b48fbf3c8be29ffe684b2
 print("Welcome to the Pokemon Dicelocke Dice Roller by Jmsnipes100!")
 import random
 print(" ")
@@ -90,9 +94,9 @@ while function !="Exit":
         print("")
         print("10:You cannot put pokemon in the daycare but you can receive eggs \nthat you did not come from your pokemon in a daycare.")
         print("")
-        print("10:You lose the Dicelocke challenge when all pokemon you have no \nliving pokemon in your party or pc.")
+        print("11:You lose the Dicelocke challenge when all pokemon you have no \nliving pokemon in your party or pc.")
         print("")
-        print("11:You can add any additional rules to your challenge that does not \nconflict with the first 11 rules.")
+        print("12:You can add any additional rules to your challenge that does not \nconflict with the first 11 rules.")
     elif function=="Name":
         length=int(random.randint(1,12))
         N1=random.randint(1,26)
