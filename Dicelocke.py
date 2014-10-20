@@ -1,11 +1,13 @@
-#Pokemon Dicelocke Dice Roller beta 0.025 by Jmsnipes100(Jacob M. Snipes)
+#Pokemon Dicelocke Dice Roller beta 0.05 by Jmsnipes100(Jacob M. Snipes)
 print("Welcome to the Pokemon Dicelocke Dice Roller by Jmsnipes100!")
 import random
 print(" ")
 print("For help type 'Help', for rules type 'Rules'.")
 print(" ")
 print("Entering anything but a # when asked for will cause the Dice Roller to crash.")
-while 1==1:
+print("")
+function=input("Press Enter to start, when you are finished type 'Exit' to exit the program.")
+while function !="Exit":
     print(" ")
     function=input("What do you need? ")
     if function == "Starter":
@@ -65,6 +67,8 @@ while 1==1:
         print("Help: List the functions of the commands.")
         print(" ")
         print("Rules: Lists the basic rules of Dicelocke.")
+        print("")
+        print("Exit: Exits the Dice Roller.")
     elif function=="Rules":
         print("1:You must use the 'Starter' function to chose your starter.")
         print("")
@@ -753,5 +757,8 @@ while 1==1:
             print("ERROR")
         name=L1+L2+L3+L4+L5+L6+L7+L8+L9+L10+L11+L12
         print("Your pokemon's name is, "+name[:length]+"!")
+    elif function=="Exit":
+        print("")
+        print("Goodbye")
     else:
         print("No such function.")
