@@ -1,11 +1,10 @@
-#Pokemon Dicelocke Dice Roller beta 0.05 by Jmsnipes100(Jacob M. Snipes)
+#Pokemon Dicelocke Dice Roller beta 0.1 by Jmsnipes100(Jacob M. Snipes)
 print("Welcome to the Pokemon Dicelocke Dice Roller by Jmsnipes100!")
 import random
+validNumber=("1","2","3","4","5","6")
 print(" ")
 print("For help type 'Help', for rules type 'Rules'.")
 print(" ")
-print("Entering anything but a # when asked for will cause the Dice Roller to crash.")
-print("")
 function=input("Press Enter to start, when you are finished type 'Exit' to exit the program.")
 while function !="Exit":
     print(" ")
@@ -21,35 +20,47 @@ while function !="Exit":
         else:
             print("ERROR")
     elif function=="Capture":
-        party=int(input("How many pokemon are in your party? "))
-        roll=int(random.randint(1,6)-party)
-        if roll>0:
-            print("You can attempt to capture the pokemon.")
-        elif roll<1:
-            print("You cannot attempt to capture the pokemon.")
+        party=input("How many pokemon are in your party? ")
+        if party in validNumber:
+            party=int(party)
+            roll=int(random.randint(1,6)-party)
+            if roll>0:
+                print("You can attempt to capture the pokemon.")
+            elif roll<1:
+                print("You cannot attempt to capture the pokemon.")
+            else:
+                print("ERROR")
         else:
-            print("ERROR")
+            print("Invalid number")
     elif function=="New Town":
         roll=str(random.randint(1,12))
         print("You may buy "+roll+" item(s) in this town.")
     elif function=="Item":
-        party=int(input("How many pokemon are in your party? "))
-        roll=int(random.randint(1,6)+party)
-        if roll>6:
-            print("You can keep the item")
-        elif roll<7:
-            print("You must discard the item.")
+        party=input("How many pokemon are in your party? ")
+        if party in validNumber:
+            party=int(party)
+            roll=int(random.randint(1,6)+party)
+            if roll>6:
+                print("You can keep the item")
+            elif roll<7:
+                print("You must discard the item.")
+            else:
+                print("ERROR")
         else:
-            print("ERROR")
+            print("Invalid Number")
     elif function=="Revive":
-        party=int(input("How many pokemon where in your party at the time of your gym victory? "))
-        roll=int(random.randint(1,6)-party)
-        if roll>0:
-            print("You many revive one of your pokemon!")
-        elif roll<1:
-            print("You cannot revive one of your pokemon.")
+        party=input("How many pokemon where in your party at the time of your gym victory? ")
+        if party in validNumber:
+            party=int(party)
+            roll=int(random.randint(1,6)-party)
+            if roll>0:
+                print("You many revive one of your pokemon!")
+            elif roll<1:
+                print("You cannot revive one of your pokemon.")
+            else:
+                print("ERROR")
         else:
-            print("ERROR")
+            print("Invalid Number")
     elif function=="Help":
         print(" ")
         print("Starter: Choses your starter.")
