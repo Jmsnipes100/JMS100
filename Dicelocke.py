@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #Pokemon Dicelocke Dice Roller beta 0.05 by Jmsnipes100(Jacob M. Snipes)
-=======
-#Pokemon Dicelocke Dice Roller beta 0.03 by Jmsnipes100(Jacob M. Snipes)
->>>>>>> c215269766e4cbaa771b48fbf3c8be29ffe684b2
 print("Welcome to the Pokemon Dicelocke Dice Roller by Jmsnipes100!")
 import random
 print(" ")
