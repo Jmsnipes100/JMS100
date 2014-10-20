@@ -1,4 +1,4 @@
-#Pokemon Dicelocke Dice Roller beta 0.1 by Jmsnipes100(Jacob M. Snipes)
+#Pokemon Dicelocke Dice Roller beta 0.11 by Jmsnipes100(Jacob M. Snipes)
 print("Welcome to the Pokemon Dicelocke Dice Roller by Jmsnipes100!")
 import random
 validNumber=("1","2","3","4","5","6")
@@ -6,10 +6,11 @@ print(" ")
 print("For help type 'Help', for rules type 'Rules'.")
 print(" ")
 function=input("Press Enter to start, when you are finished type 'Exit' to exit the program.")
-while function !="Exit":
+while function !="exit":
     print(" ")
     function=input("What do you need? ")
-    if function == "Starter":
+    function=function.lower()
+    if function == "starter":
         roll=int(random.randint(1,3))
         if roll==1:
             print("Your Starter is a Grass type!")
@@ -19,7 +20,7 @@ while function !="Exit":
             print("Your Starter is a Water type!")
         else:
             print("ERROR")
-    elif function=="Capture":
+    elif function=="capture":
         party=input("How many pokemon are in your party? ")
         if party in validNumber:
             party=int(party)
@@ -32,10 +33,10 @@ while function !="Exit":
                 print("ERROR")
         else:
             print("Invalid number")
-    elif function=="New Town":
+    elif function=="new town":
         roll=str(random.randint(1,12))
         print("You may buy "+roll+" item(s) in this town.")
-    elif function=="Item":
+    elif function=="item":
         party=input("How many pokemon are in your party? ")
         if party in validNumber:
             party=int(party)
@@ -48,7 +49,7 @@ while function !="Exit":
                 print("ERROR")
         else:
             print("Invalid Number")
-    elif function=="Revive":
+    elif function=="revive":
         party=input("How many pokemon where in your party at the time of your gym victory? ")
         if party in validNumber:
             party=int(party)
@@ -61,7 +62,7 @@ while function !="Exit":
                 print("ERROR")
         else:
             print("Invalid Number")
-    elif function=="Help":
+    elif function=="help":
         print(" ")
         print("Starter: Choses your starter.")
         print(" ")
@@ -80,7 +81,7 @@ while function !="Exit":
         print("Rules: Lists the basic rules of Dicelocke.")
         print("")
         print("Exit: Exits the Dice Roller.")
-    elif function=="Rules":
+    elif function=="rules":
         print("1:You must use the 'Starter' function to chose your starter.")
         print("")
         print("2:You must use the 'Name' function to name your pokemon.\n(Note there is a slight chance that a name will be profane/insulting\n & you can then change it if you wish by running the 'Name' function again)")
@@ -104,7 +105,7 @@ while function !="Exit":
         print("11:You lose the Dicelocke challenge when all pokemon you have no \nliving pokemon in your party or pc.")
         print("")
         print("12:You can add any additional rules to your challenge that does not \nconflict with the first 11 rules.")
-    elif function=="Name":
+    elif function=="name":
         length=int(random.randint(1,12))
         N1=random.randint(1,26)
         if N1==1:
@@ -768,7 +769,7 @@ while function !="Exit":
             print("ERROR")
         name=L1+L2+L3+L4+L5+L6+L7+L8+L9+L10+L11+L12
         print("Your pokemon's name is, "+name[:length]+"!")
-    elif function=="Exit":
+    elif function=="exit":
         print("")
         print("Goodbye")
     else:
